@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+// import { connect } from 'react-redux';
 
 export class Login extends Component {
     state = {
-        userName: '',
+      credentials:{
+        username: '',
         password: '',
+      }
     }
-
 
   render() {
     return (
@@ -13,9 +15,9 @@ export class Login extends Component {
           <h2>Log in Here!</h2>
         <form>
            <input 
-            className='userName'
+            className='username'
             placeholder='Username'
-            text='userName'
+            text='username'
             name="password"
             type="text"
             >
@@ -36,5 +38,6 @@ export class Login extends Component {
   }
 }
 
-export default Login
+
+export default Login;
 

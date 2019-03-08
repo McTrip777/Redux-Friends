@@ -5,16 +5,22 @@ import FriendsList from './Components/FriendsList';
 import NavBar from './Components/NavBar';
 import { Route } from 'react-router-dom';
 
+
 class App extends Component {
-  render() {
-    return (
+  state ={
+
+  }
+
+render(){
+  return (
       <div className="App">
       <NavBar />
-        <Route exact path='/' component={Login} />
-        <Route path='/friendsList' render={FriendsList} />
+        <Route exact path='/login' component={Login} />
+        <Route path='/friendsList' component={FriendsList} />
       </div>
     );
-  }
+}
 }
 
 export default App;
+
