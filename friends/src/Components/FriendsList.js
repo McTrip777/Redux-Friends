@@ -22,7 +22,8 @@ render() {
 }
 const mapStateToProps = state => {
   return{
-    friends: state.friends
+    friends: state.friends,
+    fetching: state.fetching,
   }
 }
 
