@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Friend = () => {
-  const { name, age, email } = this.state.friend;
+const Friend = props => {
+  const { name, age, email } = props.friend;
   return (
     <div>
       <h3>{name}</h3>

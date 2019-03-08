@@ -10,6 +10,7 @@ componentDidMount() {
 render() {
   return (
     <div>
+      <h2>Protected stuff!</h2>
       <h2>I am the FriendList</h2>
       {this.props.isFetching ? (
           <p>Hello this is were friends hangggg out.</p>

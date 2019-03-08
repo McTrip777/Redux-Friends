@@ -5,7 +5,6 @@ import FriendsList from './Components/FriendsList';
 import NavBar from './Components/NavBar';
 import { Route } from 'react-router-dom';
 import PrivateRoute from './Components/PrivateRoute';
-import Protected from './Components/Protected';
 
 
 class App extends Component {
@@ -17,9 +16,8 @@ render(){
   return (
       <div className="App">
       <NavBar />
-        <Route exact path='/login' component={Login} />
-        <Route path='/friendsList' component={FriendsList} />
-        <PrivateRoute exact path="/protected" component={Protected} />
+        <Route exact path='/' component={Login} />
+        <PrivateRoute exact path="/friendsList" component={FriendsList} />
       </div>
     );
 }
